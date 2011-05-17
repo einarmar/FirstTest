@@ -84,6 +84,7 @@ class arabic_roman : public MarelCppApp
         	{
 				int32_t hundredValue = (value/100);
 				int32_t tensValue;
+
 				char* hValue = toHundreds( hundredValue );
 				if( hValue )
 				{
@@ -94,13 +95,20 @@ class arabic_roman : public MarelCppApp
 				{
 					tensValue = (value/10);
 				}
+
 				char* tValue = toTens( tensValue );
-				finalValue.append(tValue);
+				if( tValue )
+				{
+					finalValue.append(tValue);
+				}
 
 				int32_t oneValue = value - ( (100*hundredValue) + (10*tensValue) );
 	        	char* oValue = toOnes( oneValue );
-	        	finalValue.append(oValue);
-	        	printf(" %s%s%s\n", hValue, tValue, oValue );
+	        	if( oValue )
+	        	{
+	        		finalValue.append(oValue);
+	        	}
+	        	printf(" %s\n", finalValue.c_str() );
 	        	return finalValue.c_str();
         	}
         	else if( value == 0)
@@ -112,7 +120,7 @@ class arabic_roman : public MarelCppApp
 
         char* toOnes( int32_t value )
         {
-        	if( value < 10 )
+        	if( value < 10 && value > 0 )
         	{
         		return onesArray[value-1];
         	}
@@ -121,7 +129,7 @@ class arabic_roman : public MarelCppApp
 
         char* toTens( int32_t value )
 		{
-			if( value < 10 )
+			if( value < 10 && value > 0 )
 			{
 				return tensArray[value-1];
 			}
@@ -130,7 +138,7 @@ class arabic_roman : public MarelCppApp
 
         char* toHundreds( int32_t value )
 		{
-			if( value < 10 )
+			if( value < 10 && value > 0 )
 			{
 				return hundredsArray[value-1];
 			}

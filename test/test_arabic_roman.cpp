@@ -55,20 +55,24 @@ SUITE(test_suite_for_arabic_roman)
 	{
 		arabic_roman* libPtr = new arabic_roman("arabic_roman");
 		CHECK(libPtr);
-		CHECK_EQUAL( "CCCXXIV", libPtr->doConvert(324));
+		CHECK_EQUAL( "CCCXXIV", libPtr->doConvert(3));
 		delete libPtr;
 	}
 
     TEST(test_6)
 	{
-    	int32_t testValues[] = { 1,2,3,4,5,6,7,8,9,10,20,30,40,50,60,70,80,90,100,21,33,67,83,14,39,41,98,49,92,0 };
+    	int32_t testValues[] = { 1,2,3,4,5,6,7,8,9,10,20,30,40,50,60,70,80,90,100,21,33,67,83,14,39,41,98,49,92 };
+    	int32_t arraySize = sizeof( testValues ) / 4;
+    	printf("arraysize: %d\n", arraySize );
 		arabic_roman* libPtr = new arabic_roman("arabic_roman");
 		CHECK(libPtr);
 		int32_t iCnt=0;
 		do
 		{
-			CHECK( NULL != libPtr->doConvert(testValues[iCnt]));
-		}while (testValues[++iCnt] != 0);
+			const char* romanValue = libPtr->doConvert(testValues[iCnt]);
+			printf("Value[%d]: %d = %s\n", iCnt, testValues[iCnt], romanValue);
+			CHECK( NULL != romanValue);
+		}while (++iCnt < arraySize);
 		delete libPtr;
 	}
 //
