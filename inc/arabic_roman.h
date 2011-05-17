@@ -52,9 +52,9 @@
 //--------------------------------------------------------------------
 // global variables
 //--------------------------------------------------------------------
-std::string onesArray[9] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
-std::string tensArray[9] = { "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" };
-std::string hundredsArray[9] = { "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" };
+char* onesArray[9] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
+char* tensArray[9] = { "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" };
+char* hundredsArray[9] = { "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" };
 
 //--------------------------------------------------------------------
 // local prototypes
@@ -77,53 +77,62 @@ class arabic_roman : public MarelCppApp
          */
         ~arabic_roman();
 
-        int32_t doConvert( int32_t value )
+        const char* doConvert( int32_t value )
         {
-        	printf("DoConvert %d\n", value);
-        	if( value < 1000 )
+        	finalValue.clear();
+        	if( value < 1000 && value > 0 )
         	{
 				int32_t hundredValue = (value/100);
 				int32_t tensValue;
-				const char* hValue = toHundreds( hundredValue );
+				char* hValue = toHundreds( hundredValue );
 				if( hValue )
 				{
+					finalValue.append(hValue);
 					tensValue = ((value%100) / 10);
 				}
 				else
 				{
 					tensValue = (value/10);
 				}
-				printf("hvalue: %d - tvalue: %d\n", hundredValue, tensValue );
-				const char* tValue = toTens( tensValue );
-				int32_t oneValue = value - ( (100*hundredValue) + (10*tensValue) );
-	        	const char* oValue = toOnes( oneValue );
-	        	printf(" %s%s%s\n", hValue, tValue, oValue );
-        	}
+				char* tValue = toTens( tensValue );
+				finalValue.append(tValue);
 
-        }
-        const char* toOnes( int32_t value )
-        {
-        	if( value < 10 )
+				int32_t oneValue = value - ( (100*hundredValue) + (10*tensValue) );
+	        	char* oValue = toOnes( oneValue );
+	        	finalValue.append(oValue);
+	        	printf(" %s%s%s\n", hValue, tValue, oValue );
+	        	return finalValue.c_str();
+        	}
+        	else if( value == 0)
         	{
-        		return onesArray[value-1].c_str();
+        		return (const char*)"0";
         	}
         	return NULL;
         }
 
-        const char* toTens( int32_t value )
+        char* toOnes( int32_t value )
+        {
+        	if( value < 10 )
+        	{
+        		return onesArray[value-1];
+        	}
+        	return NULL;
+        }
+
+        char* toTens( int32_t value )
 		{
 			if( value < 10 )
 			{
-				return tensArray[value-1].c_str();
+				return tensArray[value-1];
 			}
 			return NULL;
 		}
 
-        const char* toHundreds( int32_t value )
+        char* toHundreds( int32_t value )
 		{
 			if( value < 10 )
 			{
-				return hundredsArray[value-1].c_str();
+				return hundredsArray[value-1];
 			}
 			return NULL;
 		}

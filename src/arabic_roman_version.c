@@ -10,7 +10,7 @@ static struct mversion _mversion_version = {
     .builder = "einar",
     .machine = "einar-laptop",
     .url = "",
-    .date = "Tue May 17 12:33:08 GMT 2011",
+    .date = "Tue May 17 15:12:17 GMT 2011",
     .major = 0,
     .minor = 1,
     .patch = 0,
@@ -37,5 +37,5 @@ const char * arabic_roman_svnversion( void )
 const char * arabic_roman_longsvnversion( void )
 {
 	return "This function is no longer supported. Please use mversion_fprintf() in mversion library."
-		"arabic_roman-0.1.0-0-einar-Tue May 17 12:33:08 GMT 2011";
+		"arabic_roman-0.1.0-0-einar-Tue May 17 15:12:17 GMT 2011";
 }
