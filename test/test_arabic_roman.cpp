@@ -65,7 +65,7 @@ int main(int argc, char **argv)
     system (command.c_str());
 
     arabic_roman* libPtr = new arabic_roman("arabic_roman");
-    libPtr->doConvert( 123 );
+    libPtr->doConvert( 12 );
     cout << "Results will be in the file " << outfile << "\nTesting...\n";
     ofstream f(outfile.c_str(), fstream::app | fstream::out);
 

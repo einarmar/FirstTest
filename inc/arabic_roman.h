@@ -52,9 +52,9 @@
 //--------------------------------------------------------------------
 // global variables
 //--------------------------------------------------------------------
-std::string onesArray[9]; // = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
-std::string tensArray[9]; // = { "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" };
-std::string hundredsArray[9]; // = { "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" };
+std::string onesArray[9] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
+std::string tensArray[9] = { "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" };
+std::string hundredsArray[9] = { "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" };
 
 //--------------------------------------------------------------------
 // local prototypes
@@ -87,7 +87,7 @@ class arabic_roman : public MarelCppApp
 				const char* hValue = toHundreds( hundredValue );
 				if( hValue )
 				{
-					tensValue = (value%100);
+					tensValue = ((value%100) / 10);
 				}
 				else
 				{
@@ -95,7 +95,8 @@ class arabic_roman : public MarelCppApp
 				}
 				printf("hvalue: %d - tvalue: %d\n", hundredValue, tensValue );
 				const char* tValue = toTens( tensValue );
-	        	const char* oValue = toOnes( (value-(hundredValue+tensValue)) );
+				int32_t oneValue = value - ( (100*hundredValue) + (10*tensValue) );
+	        	const char* oValue = toOnes( oneValue );
 	        	printf(" %s%s%s\n", hValue, tValue, oValue );
         	}
 
@@ -104,7 +105,7 @@ class arabic_roman : public MarelCppApp
         {
         	if( value < 10 )
         	{
-        		return onesArray[value].c_str();
+        		return onesArray[value-1].c_str();
         	}
         	return NULL;
         }
@@ -113,7 +114,7 @@ class arabic_roman : public MarelCppApp
 		{
 			if( value < 10 )
 			{
-				return tensArray[value].c_str();
+				return tensArray[value-1].c_str();
 			}
 			return NULL;
 		}
@@ -122,7 +123,7 @@ class arabic_roman : public MarelCppApp
 		{
 			if( value < 10 )
 			{
-				return hundredsArray[value].c_str();
+				return hundredsArray[value-1].c_str();
 			}
 			return NULL;
 		}
