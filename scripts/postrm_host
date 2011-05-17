@@ -1,0 +1,53 @@
+#!/bin/bash
+# 
+# postrm
+# This script is called after the package files have been 
+# removed or replaced.
+#
+
+
+
+
+# This is called when the package is to be removed
+# but the user might want to keep his configuration
+remove () {
+
+}
+
+
+# This package has previously been removed and is now having
+# its configuration purged from the system.
+purge () {
+
+
+}
+
+# About to upgrade FROM THIS VERSION to the version in argument $2.
+# "prerm upgrade" has been called for this version, and "preinst
+# upgrade" has been called for the new version.
+# Thi is the last chance to clean up.
+upgrade () {
+
+}
+
+$RETVAL=0
+
+
+
+case "$1" in
+    purge)
+        purge
+    ;;
+    remove)
+        remove
+    ;;
+    upgrade)
+        upgrade
+    ;;
+    *)
+        echo "postrm called with unknown argument \`$1'" >&2
+    ;;
+esac
+
+exit $RETVAL
+

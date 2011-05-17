@@ -1,0 +1,39 @@
+#!/bin/bash
+# 
+# prerm
+# This script is called before the package files are been 
+# removed or replaced.
+#
+
+
+# This is called when the package is to be removed
+# but the user might want to keep his configuration
+remove () {
+    RETVAL=0
+}
+
+
+# About to upgrade FROM THIS VERSION to the version in argument $2.
+# "prerm upgrade" is the first action done by dpkg in when upgrading.
+upgrade () {
+    RETVAL=0
+}
+
+RETVAL=0
+
+
+
+case "$1" in
+    remove)
+        remove
+    ;;
+    upgrade)
+        upgrade
+    ;;
+    *)
+        echo "prerm called with unknown argument \`$1'" >&2
+    ;;
+esac
+
+exit $RETVAL
+

@@ -1,0 +1,8 @@
+<brief>
+Creates a simple Pluto C++  application
+</brief>
+<detailed>
+Creates a C++ application that has a 'main' function and uses the Pluto mqs loop.
+It offers standard methods like initialize (that passes in the command line arguments), 
+deinitialize and usage
+</detailed>

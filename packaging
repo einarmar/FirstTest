@@ -1,0 +1,84 @@
+###############################################################################
+# The package name
+###############################################################################
+Package:         arabic_roman
+
+###############################################################################
+### The package version
+#################################################################################
+Version: 0.1.0
+
+###############################################################################
+# This section is the installation destination for the target
+###############################################################################
+# Destination name
+Destination:     target
+
+# Packages that this package depends on when it is compiled
+BuildDepends:   marel-env-host, mosa-crossdevelopment, appbase-crossdevelopment
+
+# Packages that the software installed by this package depends on
+Depends:        appbase
+
+# Type of installation and files/folders to install
+Type:           release
+Install:        ##BUILDRELEASE##bin/arabic_roman usr/bin
+
+# Type of installation and files/folders to install
+Type:           debug
+Install:        ##BUILDDEBUG##bin/arabic_roman usr/bin/debug
+
+
+# The keyword PreInst names a script to execute before installing the package
+# Uncommend this keyword to activate your script
+#PreInst:	    scripts/<your script name>
+# The keyword PostInst names a script to execute after installing the package
+#PostInst:	    scripts/<your script name>
+
+
+# The keyword PreRm names a script to execute before uninstalling the package
+# Uncommend this keyword to activate your script
+#PreRm:         scripts/<your script name>
+# The keyword PostRm names a script to execute after uninstalling the package
+# Uncommend this keyword to activate your script
+#PostRm:        scripts/<your script name>
+
+
+###############################################################################
+# This section is the installation destination for the host
+###############################################################################
+# Destination name
+Destination:    host
+
+# Packages that this package depends on when it is compiled
+BuildDepends:   marel-env-host, mosa-crossdevelopment, appbase-crossdevelopment
+
+# Packages that the software installed by this package depends on
+Depends:        appbase-crossdevelopment
+
+# Type of installation and files/folders to install
+Type:           development
+# Files for the nfs target filesystem on the host
+InstallTarget:	##BUILDRELEASE##bin/arabic_roman usr/bin
+InstallTarget:	##BUILDDEBUG##bin/arabic_roman usr/bin/debug
+# Files for the filesystem on the host
+Install:    	##BUILDRELEASE##bin/arabic_roman usr/bin
+Install:    	##BUILDDEBUG##bin/arabic_roman usr/bin/debug
+
+
+# The keyword PreInst names a script to execute before installing the package
+# Uncommend this keyword to activate your script
+#PreInst:	    scripts/<your script name>
+# The keyword PostInst names a script to execute after installing the package
+#PostInst:	    scripts/<your script name>
+
+
+# The keyword PreRm names a script to execute before uninstalling the package
+# Uncommend this keyword to activate your script
+#PreRm:         scripts/<your script name>
+# The keyword PostRm names a script to execute after uninstalling the package
+# Uncommend this keyword to activate your script
+#PostRm:        scripts/<your script name>
+
+
+

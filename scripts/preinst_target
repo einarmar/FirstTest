@@ -1,0 +1,39 @@
+#!/bin/bash
+# 
+# preinst
+# This script is called before the package is installed
+#
+
+
+# This is called when the package is installed 
+# and no previous version of the packaged is installed.
+install () {
+    RETVAL=0
+}
+
+
+# About to upgrade FROM THIS VERSION to the version in argument $2.
+# "prerm upgrade" has already been called for the old version.
+upgrade () {
+    RETVAL=0
+}
+
+RETVAL=0
+
+
+
+case "$1" in
+    install)
+        install
+    ;;
+    upgrade)
+        upgrade
+    ;;
+    *)
+        echo "prerm called with unknown argument \`$1'" >&2
+        break;
+    ;;
+esac
+
+exit $RETVAL
+

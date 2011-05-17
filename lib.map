@@ -1,0 +1,468 @@
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ .group         0x0000000000000000        0x8 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+ .group         0x0000000000000000        0x8 build-host-debug/obj/arabic_roman.os
+ .group         0x0000000000000000        0x8 build-host-debug/obj/arabic_roman.os
+ .group         0x0000000000000000        0x8 build-host-debug/obj/arabic_roman.os
+ .group         0x0000000000000000        0x8 build-host-debug/obj/arabic_roman.os
+ .group         0x0000000000000000        0x8 build-host-debug/obj/arabic_roman.os
+ .group         0x0000000000000000        0x8 build-host-debug/obj/arabic_roman.os
+ .text.__i686.get_pc_thunk.bx
+                0x0000000000000000        0x4 build-host-debug/obj/arabic_roman.os
+ .note.GNU-stack
+                0x0000000000000000        0x0 build-host-debug/obj/arabic_roman.os
+ .group         0x0000000000000000        0x8 build-host-debug/obj/arabic_roman_version.os
+ .group         0x0000000000000000        0x8 build-host-debug/obj/arabic_roman_version.os
+ .text.__i686.get_pc_thunk.bx
+                0x0000000000000000        0x4 build-host-debug/obj/arabic_roman_version.os
+ .note.GNU-stack
+                0x0000000000000000        0x0 build-host-debug/obj/arabic_roman_version.os
+ .group         0x0000000000000000        0x8 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtendS.o
+ .text.__i686.get_pc_thunk.bx
+                0x0000000000000000        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtendS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtendS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+LOAD build-host-debug/obj/arabic_roman.os
+LOAD build-host-debug/obj/arabic_roman_version.os
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/libmversion.so
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/libappbase.so
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/librt.so
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.3/libstdc++.so
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/libm.so
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.3/libgcc_s.so
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/libc.so
+START GROUP
+LOAD /lib/libc.so.6
+LOAD /usr/lib/libc_nonshared.a
+LOAD /lib/ld-linux.so.2
+END GROUP
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.3/libgcc_s.so
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.3/crtendS.o
+LOAD /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o
+                0x0000000000000114                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+                0x0000000000000114       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000000114       0x24 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+
+.hash           0x0000000000000138      0x174
+ *(.hash)
+ .hash          0x0000000000000138      0x174 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+
+.gnu.hash       0x00000000000002ac       0xd8
+ *(.gnu.hash)
+ .gnu.hash      0x00000000000002ac       0xd8 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+
+.dynsym         0x0000000000000384      0x360
+ *(.dynsym)
+ .dynsym        0x0000000000000384      0x360 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+
+.dynstr         0x00000000000006e4      0x4b3
+ *(.dynstr)
+ .dynstr        0x00000000000006e4      0x4b3 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+
+.gnu.version    0x0000000000000b98       0x6c
+ *(.gnu.version)
+ .gnu.version   0x0000000000000b98       0x6c /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+
+.gnu.version_d  0x0000000000000c04        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+
+.gnu.version_r  0x0000000000000c04       0x70
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000000c04       0x70 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+
+.rel.dyn        0x0000000000000c74      0x138
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ .rel.data.rel.ro._ZTV12arabic_roman
+                0x0000000000000c74       0x48 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ .rel.data.rel.ro._ZTI12arabic_roman
+                0x0000000000000cbc       0x18 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ .rel.data.rel.ro.local
+                0x0000000000000cd4        0x8 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data.rel  0x0000000000000cdc        0x8 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ .rel.data.rel.local
+                0x0000000000000ce4       0x50 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ .rel.data.DW.ref.__gxx_personality_v0
+                0x0000000000000d34        0x8 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ .rel.ctors     0x0000000000000d3c       0x10 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ *(.rel.dtors)
+ .rel.dtors     0x0000000000000d4c        0x8 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ *(.rel.got)
+ .rel.got       0x0000000000000d54       0x58 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.ifunc)
+ .rel.ifunc     0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ .rel.eh_frame  0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+
+.rel.plt        0x0000000000000dac       0xa8
+ *(.rel.plt)
+ .rel.plt       0x0000000000000dac       0xa8 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ *(.rel.iplt)
+
+.init           0x0000000000000e54       0x30
+ *(.init)
+ .init          0x0000000000000e54       0x22 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+                0x0000000000000e54                _init
+ .init          0x0000000000000e76        0x5 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+ .init          0x0000000000000e7b        0x5 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtendS.o
+ .init          0x0000000000000e80        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o
+
+.plt            0x0000000000000e84      0x160
+ *(.plt)
+ .plt           0x0000000000000e84      0x160 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ *(.iplt)
+
+.text           0x0000000000000ff0      0x8a8
+ *(.text.unlikely .text.*_unlikely)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000000ff0        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ .text          0x0000000000000ff0       0xb7 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+ .text.__i686.get_pc_thunk.bx
+                0x00000000000010a7        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+                0x00000000000010a7                __i686.get_pc_thunk.bx
+ *fill*         0x00000000000010ab        0x1 90909090
+ .text          0x00000000000010ac      0x724 build-host-debug/obj/arabic_roman.os
+                0x00000000000010ac                _ZN12arabic_romanC2ESs
+                0x0000000000001120                _ZN12arabic_romanC1ESs
+                0x0000000000001194                _ZN12arabic_romanD2Ev
+                0x00000000000011da                _ZN12arabic_romanD1Ev
+                0x0000000000001220                _ZN12arabic_romanD0Ev
+                0x0000000000001266                _ZN12arabic_roman10initializeEiPPc
+                0x00000000000012c0                _ZN12arabic_roman12deinitializeEv
+                0x0000000000001314                _ZN12arabic_roman7timeoutEv
+                0x0000000000001368                _ZN12arabic_roman8onTmDeadEjPKc
+                0x00000000000013c2                _ZN12arabic_roman9onTmAliveEjPKc
+                0x000000000000141b                main
+ .text._ZN11MarelCppApp11reconfigureEv
+                0x00000000000017d0        0x5 build-host-debug/obj/arabic_roman.os
+                0x00000000000017d0                _ZN11MarelCppApp11reconfigureEv
+ *fill*         0x00000000000017d5        0x3 90909090
+ .text          0x00000000000017d8       0x78 build-host-debug/obj/arabic_roman_version.os
+                0x0000000000001824                arabic_roman_svnversion
+                0x000000000000183a                arabic_roman_longsvnversion
+ .text.__i686.get_pc_thunk.cx
+                0x0000000000001850        0x4 build-host-debug/obj/arabic_roman_version.os
+                0x0000000000001850                __i686.get_pc_thunk.cx
+ *fill*         0x0000000000001854        0xc 90909090
+ .text          0x0000000000001860       0x38 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtendS.o
+ .text          0x0000000000001898        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o
+ *(.gnu.warning)
+
+.fini           0x0000000000001898       0x1c
+ *(.fini)
+ .fini          0x0000000000001898       0x13 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+                0x0000000000001898                _fini
+ .fini          0x00000000000018ab        0x5 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+ .fini          0x00000000000018b0        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o
+                0x00000000000018b4                PROVIDE (__etext, .)
+                0x00000000000018b4                PROVIDE (_etext, .)
+                0x00000000000018b4                PROVIDE (etext, .)
+
+.rodata         0x00000000000018c0      0x2e0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00000000000018c0      0x19a build-host-debug/obj/arabic_roman.os
+ .rodata._ZTS12arabic_roman
+                0x0000000000001a5a        0xf build-host-debug/obj/arabic_roman.os
+                0x0000000000001a5a                _ZTS12arabic_roman
+ *fill*         0x0000000000001a69        0x3 00
+ .rodata        0x0000000000001a6c      0x134 build-host-debug/obj/arabic_roman_version.os
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000001ba0       0x94
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000001ba0       0x94 build-host-debug/obj/arabic_roman.os
+
+.eh_frame       0x0000000000001c34      0x260
+ *(.eh_frame)
+ .eh_frame      0x0000000000001c34      0x25c build-host-debug/obj/arabic_roman.os
+ .eh_frame      0x0000000000001e90        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtendS.o
+
+.gcc_except_table
+                0x0000000000001e94       0x6c
+ *(.gcc_except_table .gcc_except_table.*)
+ .gcc_except_table
+                0x0000000000001e94       0x6c build-host-debug/obj/arabic_roman.os
+                0x0000000000001f00                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0000000000003e34                . = (0x1000 DATA_SEGMENT_ALIGN 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT(.init_array.*))
+ *(.init_array)
+
+.fini_array
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+
+.ctors          0x0000000000003e34       0x10
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ .ctors         0x0000000000003e34        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ .ctors         0x0000000000003e38        0x4 build-host-debug/obj/arabic_roman.os
+ .ctors         0x0000000000003e3c        0x4 build-host-debug/obj/arabic_roman_version.os
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x0000000000003e40        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtendS.o
+
+.dtors          0x0000000000003e44        0xc
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ .dtors         0x0000000000003e44        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ .dtors         0x0000000000003e48        0x4 build-host-debug/obj/arabic_roman_version.os
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x0000000000003e4c        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtendS.o
+                0x0000000000003e4c                __DTOR_END__
+
+.jcr            0x0000000000003e50        0x4
+ *(.jcr)
+ .jcr           0x0000000000003e50        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+ .jcr           0x0000000000003e50        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtendS.o
+
+.data.rel.ro    0x0000000000003e60       0x54
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ .data.rel.ro.local
+                0x0000000000003e60        0x4 build-host-debug/obj/arabic_roman.os
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+ *fill*         0x0000000000003e64       0x1c 00
+ .data.rel.ro._ZTV12arabic_roman
+                0x0000000000003e80       0x28 build-host-debug/obj/arabic_roman.os
+                0x0000000000003e80                _ZTV12arabic_roman
+ .data.rel.ro._ZTI12arabic_roman
+                0x0000000000003ea8        0xc build-host-debug/obj/arabic_roman.os
+                0x0000000000003ea8                _ZTI12arabic_roman
+
+.dynamic        0x0000000000003eb4      0x100
+ *(.dynamic)
+ .dynamic       0x0000000000003eb4      0x100 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+                0x0000000000003eb4                _DYNAMIC
+
+.got            0x0000000000003fb4       0x2c
+ *(.got)
+ .got           0x0000000000003fb4       0x2c /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ *(.igot)
+                0x0000000000003ff4                . = (. DATA_SEGMENT_RELRO_END 0xc)
+
+.got.plt        0x0000000000003ff4       0x60
+ *(.got.plt)
+ .got.plt       0x0000000000003ff4       0x60 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+                0x0000000000003ff4                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data           0x0000000000004060       0x64
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000004060        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ .data          0x0000000000004060        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+ .data.rel      0x0000000000004060        0x4 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+                0x0000000000004060                __dso_handle
+ .data          0x0000000000004064        0x0 build-host-debug/obj/arabic_roman.os
+ .data.rel.local
+                0x0000000000004064        0xc build-host-debug/obj/arabic_roman.os
+ .data.DW.ref.__gxx_personality_v0
+                0x0000000000004070        0x4 build-host-debug/obj/arabic_roman.os
+                0x0000000000004070                DW.ref.__gxx_personality_v0
+ .data          0x0000000000004074        0x0 build-host-debug/obj/arabic_roman_version.os
+ *fill*         0x0000000000004074        0xc 00
+ .data.rel.local
+                0x0000000000004080       0x44 build-host-debug/obj/arabic_roman_version.os
+ .data          0x00000000000040c4        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtendS.o
+ .data          0x00000000000040c4        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o
+
+.data1
+ *(.data1)
+                0x00000000000040c4                _edata = .
+                0x00000000000040c4                PROVIDE (edata, .)
+                0x00000000000040c4                __bss_start = .
+
+.bss            0x00000000000040e0       0xc8
+ *(.dynbss)
+ .dynbss        0x0000000000000000        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00000000000040e0        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crti.o
+ .bss           0x00000000000040e0        0x8 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+ *fill*         0x00000000000040e8       0x18 00
+ .bss           0x0000000000004100       0xa5 build-host-debug/obj/arabic_roman.os
+                0x0000000000004100                onesArray
+                0x0000000000004140                tensArray
+                0x0000000000004180                hundredsArray
+ *fill*         0x00000000000041a5        0x3 00
+ .bss           0x00000000000041a8        0x0 build-host-debug/obj/arabic_roman_version.os
+ .bss           0x00000000000041a8        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtendS.o
+ .bss           0x00000000000041a8        0x0 /usr/lib/gcc/i486-linux-gnu/4.4.3/../../../../lib/crtn.o
+ *(COMMON)
+                0x00000000000041a8                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00000000000041a8                . = ALIGN (0x4)
+                0x00000000000041a8                . = ALIGN (0x4)
+                0x00000000000041a8                _end = .
+                0x00000000000041a8                PROVIDE (end, .)
+                0x00000000000041a8                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x23
+ *(.comment)
+ .comment       0x0000000000000000       0x23 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtbeginS.o
+                                         0x24 (size before relaxing)
+ .comment       0x0000000000000000       0x24 build-host-debug/obj/arabic_roman.os
+ .comment       0x0000000000000000       0x24 build-host-debug/obj/arabic_roman_version.os
+ .comment       0x0000000000000000       0x24 /usr/lib/gcc/i486-linux-gnu/4.4.3/crtendS.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0x48
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 build-host-debug/obj/arabic_roman.os
+ .debug_aranges
+                0x0000000000000028       0x20 build-host-debug/obj/arabic_roman_version.os
+
+.debug_pubnames
+                0x0000000000000000      0x1df
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x0000000000000000      0x191 build-host-debug/obj/arabic_roman.os
+ .debug_pubnames
+                0x0000000000000191       0x4e build-host-debug/obj/arabic_roman_version.os
+
+.debug_info     0x0000000000000000     0x3e7a
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000     0x3c85 build-host-debug/obj/arabic_roman.os
+ .debug_info    0x0000000000003c85      0x1f5 build-host-debug/obj/arabic_roman_version.os
+
+.debug_abbrev   0x0000000000000000      0x75f
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x6a9 build-host-debug/obj/arabic_roman.os
+ .debug_abbrev  0x00000000000006a9       0xb6 build-host-debug/obj/arabic_roman_version.os
+
+.debug_line     0x0000000000000000      0x456
+ *(.debug_line)
+ .debug_line    0x0000000000000000      0x3d8 build-host-debug/obj/arabic_roman.os
+ .debug_line    0x00000000000003d8       0x7e build-host-debug/obj/arabic_roman_version.os
+
+.debug_frame    0x0000000000000000       0x7c
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x7c build-host-debug/obj/arabic_roman_version.os
+
+.debug_str      0x0000000000000000     0x2ed9
+ *(.debug_str)
+ .debug_str     0x0000000000000000     0x2dbc build-host-debug/obj/arabic_roman.os
+                                       0x30c4 (size before relaxing)
+ .debug_str     0x0000000000002dbc      0x11d build-host-debug/obj/arabic_roman_version.os
+                                        0x1e3 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x39c
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x2ec build-host-debug/obj/arabic_roman.os
+ .debug_loc     0x00000000000002ec       0xb0 build-host-debug/obj/arabic_roman_version.os
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000       0x98
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x98 build-host-debug/obj/arabic_roman.os
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(build-host-debug/lib/libarabic_roman.so elf32-i386)

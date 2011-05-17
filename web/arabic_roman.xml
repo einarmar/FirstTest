@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page path="arabic_roman" name="arabic_roman" acl="srv spr adm dvl">
+<description>The pages for my project</description>
+
+<!-- Here you list your pages as lua files.
+     The files must be put into the arabic_roman folder under webmodule. -->
+
+<!--
+<page path="example.lua" name="Example" acl="adm dvl">
+    <description>Describe your page here</description>
+</page>
+-->
+</page>
