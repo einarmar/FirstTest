@@ -42,6 +42,7 @@ SUITE(test_suite_for_arabic_roman)
 		CHECK( NULL != libPtr->toHundreds(30));
 		delete libPtr;
 	}
+
 //
 //    TEST(test_2)
 //    {
@@ -63,6 +64,8 @@ int main(int argc, char **argv)
     string command = "rm -rf " + outfile;
     system (command.c_str());
 
+    arabic_roman* libPtr = new arabic_roman("arabic_roman");
+    libPtr->doConvert( 123 );
     cout << "Results will be in the file " << outfile << "\nTesting...\n";
     ofstream f(outfile.c_str(), fstream::app | fstream::out);
 

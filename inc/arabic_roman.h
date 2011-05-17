@@ -77,6 +77,29 @@ class arabic_roman : public MarelCppApp
          */
         ~arabic_roman();
 
+        int32_t doConvert( int32_t value )
+        {
+        	printf("DoConvert %d\n", value);
+        	if( value < 1000 )
+        	{
+				int32_t hundredValue = (value/100);
+				int32_t tensValue;
+				const char* hValue = toHundreds( hundredValue );
+				if( hValue )
+				{
+					tensValue = (value%100);
+				}
+				else
+				{
+					tensValue = (value/10);
+				}
+				printf("hvalue: %d - tvalue: %d\n", hundredValue, tensValue );
+				const char* tValue = toTens( tensValue );
+	        	const char* oValue = toOnes( (value-(hundredValue+tensValue)) );
+	        	printf(" %s%s%s\n", hValue, tValue, oValue );
+        	}
+
+        }
         const char* toOnes( int32_t value )
         {
         	if( value < 10 )
@@ -88,18 +111,18 @@ class arabic_roman : public MarelCppApp
 
         const char* toTens( int32_t value )
 		{
-			if( value > 9 && value < 100 )
+			if( value < 10 )
 			{
-				return tensArray[value - 9].c_str();
+				return tensArray[value].c_str();
 			}
 			return NULL;
 		}
 
         const char* toHundreds( int32_t value )
 		{
-			if( value > 99 && value < 1000 )
+			if( value < 10 )
 			{
-				return hundredsArray[value - 99].c_str();
+				return hundredsArray[value].c_str();
 			}
 			return NULL;
 		}
@@ -138,7 +161,7 @@ class arabic_roman : public MarelCppApp
         int32_t onTmAlive( mqs_streamid_t sid M_UU, const char * ep M_UU );
 
     private:
-
+        std::string finalValue;
 };
 
 /**@}*/
