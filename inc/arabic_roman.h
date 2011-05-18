@@ -102,6 +102,8 @@ class arabic_roman : public MarelCppApp
 					finalValue.append(tValue);
 				}
 
+
+
 				int32_t oneValue = value - ( (100*hundredValue) + (10*tensValue) );
 	        	char* oValue = toOnes( oneValue );
 	        	if( oValue )
