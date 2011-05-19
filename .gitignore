@@ -1,0 +1,6 @@
+cfg-public.doxy
+.cproject
+lib.map
+.project.sconsign.dblite
+test_arabic_roman.xml
+arabic_roman_version.c
