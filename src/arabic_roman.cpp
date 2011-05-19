@@ -48,6 +48,7 @@ arabic_roman::arabic_roman( std::string appName M_UU ) :
 arabic_roman::~arabic_roman()
 {
     //TODO Implement your cleanup here
+
     //...
     //...
 }
