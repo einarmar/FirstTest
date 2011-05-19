@@ -15,10 +15,6 @@
 
      @author your-name-here <your.email.here@marel.com>
 
-     <b>
-     Copyright (c) 2011 Marel Food Systems
-     Proprietary material, all rights reserved, use or disclosure forbidden.
-     </b>
  */
 
 #ifndef arabic_roman_H_
